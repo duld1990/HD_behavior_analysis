@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Load OPF mouse data
-file_path = "G:\OPF_VIDEOS/test_data.txt"  # Directory to the coordinates file in *.TXT format
+file_path = "/test_data.txt"  # Directory to the coordinates file in *.TXT format
 
 # Extract coordinates
 with open(file_path, "r") as f:
