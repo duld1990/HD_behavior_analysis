@@ -8,24 +8,14 @@ import re
 pattern = r"(\d+\.\d+)\s+(\d+\.\d+)"
 
 # File paths and estimated side lengths (used for 1m normalization)
-file_data = {
-    "Mouse 1 (DN)": ("/DN1.txt", 167.96),
-    "Mouse 2 (WT1)": ("/WT1.txt", 175.90),
-    "Mouse 3 (WT2)": ("/WT2.txt", 95.85),
-    "Mouse 4 (WT3)": ("/WT3.txt", 173.33)
-}
+file_path = r"\test_data.txt"  # Use raw string for Windows paths
 
-# Load and scale coordinate data
-tracks_scaled = []
-titles = []
-for label, (path, side_length) in file_data.items():
-    with open(path, "r") as f:
-        content = f.read()
-    matches = re.findall(pattern, content)
-    coords = pd.DataFrame(matches, columns=["X", "Y"]).astype(float)
-    scale = 1.0 / side_length
-    coords_scaled = coords * scale
-    tracks_scaled.append(coords_scaled)
+# Extract coordinates
+with open(file_path, "r") as f:
+    content = f.read()
+pattern = r"(\d+\.\d+)\s+(\d+\.\d+)"
+matches = re.findall(pattern, content)
+coordinates = pd.DataFrame(matches, columns=["X", "Y"]).astype(float)
     titles.append(label)
 
 # Define a middle square spans from (0.25, 0.25) to (0.75, 0.75)
