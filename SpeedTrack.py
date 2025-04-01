@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Load OPF mouse data
-file_path = r"\test_data.txt"  # Use raw string for Windows paths
+file_path = r"\test_data.txt"  # Directory
 
 # Extract coordinates
 with open(file_path, "r") as f:
