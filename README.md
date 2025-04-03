@@ -1,3 +1,5 @@
+Update 3 Apr 2025 to open-field tracking, minor improvements and bug fixes
+
 # HD_behavior_analysis
 Post-processing of ImageJ processed open-field tracks  
 ImageJ is available at: https://imagej.net/downloads  
