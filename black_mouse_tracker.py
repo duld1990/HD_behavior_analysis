@@ -12,7 +12,7 @@ import numpy as np
 %matplotlib qt
 import matplotlib.pyplot as plt
 
-# === User-defined settings ===
+# Directories and camera settings
 video_path = r"G:\OPF_VIDEOS\WIN_20250403_13_54_53_Pro.mp4"  # Full path to your video file
 output_dir = r"G:\OPF_VIDEOS"  # Directory where results will be saved
 sampling_rate = 60  # Desired frame sampling rate (frames per second)
