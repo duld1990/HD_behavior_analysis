@@ -1,3 +1,8 @@
+Update 15 Apr 2025
+
+Added a script to generate speed heatmaps while analyzing standard open-field tests for C57/BL6 mouse
+open-field tracking_speed_heatmap.py
+
 Update 11 Apr 2025 
 
 Include scripts for open-field tracking with live preview, and ROI manual recognition, minor improvements and bug fixes
